@@ -397,6 +397,7 @@ header nav .form i {
   background-size: cover;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .design::before {
@@ -413,6 +414,50 @@ header nav .form i {
 .design .text {
   position: relative;
   z-index: 2;
+  flex: 1;
+}
+
+.design .image {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .design .image {
+    display: none;
+  }
+}
+
+.design .image img {
+  position: relative;
+  width: 600px;
+  bottom: -150px;
+}
+
+.design .text {
+  color: var(--white-color);
+  background-color: var(--transparent-color);
+  padding: 50px;
+  border-radius: 5px 0 0 5px;
+}
+
+.design .text h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.design .text ul li {
+  padding: 15px 0;
+}
+
+.design .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
 }
 
 /* End Design */
