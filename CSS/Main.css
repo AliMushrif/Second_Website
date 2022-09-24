@@ -1052,3 +1052,115 @@ header nav .form i {
 }
 
 /* End Pricing */
+
+/* Start Subscribe */
+
+.subscribe {
+  padding-top: calc(var(--section-padding) + 100px);
+  padding-bottom: calc(var(--section-padding) + 100px);
+  color: var(--white-color);
+  background-image: url(../Images/Subscribe_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.subscribe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.subscribe .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .subscribe .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.subscribe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+
+.subscribe form input[type="email"] {
+  border: 1px solid var(--white-color);
+  border-right: none;
+  background: none;
+  padding: 0 20px 0 60px;
+  caret-color: var(--main-color);
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  width: calc(100% - 130px);
+  height: 60px;
+  color: var(--white-color);
+}
+
+.subscribe form input[type="submit"] {
+  padding: 0 10px;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  border: none;
+  width: 130px;
+  text-transform: uppercase;
+}
+
+.subscribe form input[type="submit"]:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: 1px solid var(--main-color);
+}
+
+.subscribe form i {
+  position: absolute;
+  top: 50%;
+  translate: -50%;
+  left: 30px;
+}
+
+.subscribe form input[type="email"]:focus ~ i {
+  color: var(--main-color);
+}
+
+.subscribe form ::placeholder {
+  color: var(--white-color);
+}
+
+.subscribe form input[type="email"]:focus::placeholder {
+  color: var(--main-color);
+}
+
+.subscribe p {
+  margin-left: 40px;
+  line-height: 2;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 60px;
+  width: 600px;
+}
+
+@media (max-width: 991px) {
+  .subscribe p {
+    text-align: center;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+}
+
+/* End Subscribe */
