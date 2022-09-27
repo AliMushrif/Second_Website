@@ -555,6 +555,10 @@ header nav .form i {
   width: fit-content;
 }
 
+.portfolio .more:hover {
+  background-color: black;
+}
+
 /* End Portfolio */
 
 /* Start Video */
@@ -605,7 +609,7 @@ header nav .form i {
 }
 
 .video .text button {
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: var(--main-color);
   color: var(--white-color);
   padding: 10px 20px;
   border: none;
@@ -614,7 +618,7 @@ header nav .form i {
 }
 
 .video .text button:hover {
-  background-color: var(--main-color);
+  background-color: black;
 }
 
 /* End Video */
@@ -1041,7 +1045,7 @@ header nav .form i {
 .pricing .contact-us a {
   text-decoration: none;
   padding: 15px 20px;
-  background-color: black;
+  background-color: var(--main-color);
   border-radius: 5px;
   color: var(--white-color);
 }
@@ -1049,7 +1053,7 @@ header nav .form i {
 .pricing .contact-us a:hover {
   text-decoration: none;
   padding: 15px 20px;
-  background-color: var(--main-color);
+  background-color: black;
   border-radius: 5px;
   color: var(--white-color);
 }
@@ -1219,7 +1223,7 @@ header nav .form i {
   margin-left: auto;
   text-transform: uppercase;
   color: var(--white-color);
-  background-color: black;
+  background-color: var(--main-color);
   padding: 15px;
   border-radius: 5px;
   outline: none;
@@ -1228,8 +1232,8 @@ header nav .form i {
 }
 
 .contact .content form input[type="submit"]:hover {
-  background-color: var(--main-color);
-  color: black;
+  background-color: black;
+  color: var(--white-color);
 }
 
 @media (max-width: 767px) {
